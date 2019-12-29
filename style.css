@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    padding: 1%;
+}
+#sidebar {
+    background-color: rgb(235, 225, 225);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
