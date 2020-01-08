@@ -22,7 +22,7 @@
         <h4>Search for City:</h4>
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="City" id="city-search">
-            <button class="btn btn-primary" type="button" id="search-btn">Search <i class="fa fa-search"></i></button>
+            <button class="btn btn-primary" type="button" id="search-btn"><i class="fa fa-search"></i></button>
         </form>
          <div id="recent-search"></div>
     </div>
@@ -30,6 +30,7 @@
      <div class="container" id="main">
          <div class="row">
              <div class="col-md-10" id="current-city-conditions">
+                <h2>Current Conditions</h2>
                  <br>
                 <div class="city"></div>
                 <div class="icon"></div>
@@ -45,45 +46,17 @@
              </div>
          </div>
          <br>
-         <div class="row">
-             <div class="col-md-10" id="future-forcast">
-                 <h3>5-Day Forcast:</h3>
-                 <!-- <div class="card-deck">
-                    <div class="card">
-                     <img src="" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title"></h5>
-                          <p class="card-text"></p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title"></h5>
-                          <p class="card-text"></p>
-                        </div>
-                      </div>
-                  </div> -->
+         <div class="row" id="five-day-forcast">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <h2>5 Day Forecast:</h2>
+          <div class="card-deck" >
+            <div class= "five-day" id="5-day-forecast"></div>
+          </div>
+        </div>
              </div>
-         </div>
-    </div>
+             </div>
+    
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"

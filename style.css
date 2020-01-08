@@ -16,12 +16,17 @@ h1 {
 }
 
 #main {
-    margin-left: 26%;
-    
+    display: left;
+    margin-left: 0%;
 }
 
 #current-city-conditions {
     border-style: solid;
     border-width: thin;
-    margin-left: 2%;
+    margin-left: 40%;
+}
+
+.five-day {
+    display: flex;
+    justify-content: center;
 }
