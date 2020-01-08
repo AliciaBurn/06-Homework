@@ -9,9 +9,11 @@ $(document).ready(function () {
 
     var location = $("#city-search").val();
     currentCityConditions(location);
+    
 
     getFiveDayForecast(location)
     .then(function(forecast) {
+      clear()
       appendFiveDayForecast(forecast);
   
   });
@@ -34,7 +36,7 @@ $(document).ready(function () {
       $(".icon").append(iconImg.attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
       );
 
-      $(".temp").text("Temp: " + response.main.temp + "F");
+      $(".temp").text("Temp: " + response.main.temp + "°F");
       $(".humidity").text("Humidity: " + response.main.humidity + "%");
       $(".wind-speed").text("Wind Speed: " + response.wind.speed + "mph");
 
@@ -126,10 +128,12 @@ $(document).ready(function () {
       }
   }
   function clear() {
-    $(".icon-image").empty();
+    // $(".icon").empty();
     $("#5-day-forecast").empty();
     $("#city-input").val("");
-    $("#error-message").empty();
   }
+  $("#clear-all").on("click", clear);
+
+  
 })
 });
