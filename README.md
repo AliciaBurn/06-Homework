@@ -3,8 +3,12 @@
 Read Me
 
 Project: Weather Dashboard
+
 Author: Alicia Burn
+
 Date: 1/6/2020
+
+https://aliciaburn.github.io/06-Homework/
 
 ******************************
 *  TABLE OF CONTENTS         
